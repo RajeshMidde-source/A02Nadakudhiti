@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Fahrenheit-Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="bootstrap.css">
+        <!-- <link rel="stylesheet" href="custom.css"> -->
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+                background-image: url("C:/Users/s531514/Desktop/bg.jpg ");
+            }
+        </style>
+
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home1.html">Home
+          </a>
+          <a class="navbar-brand" href="Temp calc.html">Calculator
+          </a>
+          <a class="navbar-brand" href="Contactinfo.html">Contact 
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+       
+  <div class="container" style="padding-top:100px">
+      <h2>Temperature Converter</h2>
+      <p id="heading">Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+      
+      <div class="labels">
+        <label id="Inputlabel">Fahrenheit:</label>
+        <input id="inputFahrenheit" type="number" name="tempinput"placeholder="Input Temparature" oninput="temperatureConverter()" onkeypress="temperatureConverter(this.value)">
+         <br/> 
+         <label>Inverse:</label><input type="checkbox" id = "inverseSelect" onchange="temperatureConverter()" name="inverse" value=true/>
+      </div>
+      <div class="abc">
+      <label id="OutputLabel">Celsius: </label><span style="padding-left:10px"id="outputCelcius"></span>
+      </div>
+     <center>
+        <iframe width="554" height="380" src="https://www.youtube.com/embed/H83CpUMIoxA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </center>
+      </div>
+     
+    </div>
+  </div>
+      
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="temp.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+
+    </body>
+</html>
